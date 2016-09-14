@@ -1,3 +1,5 @@
+# Site Settings
+title: "gavindonnelly.github.io"
 name: Gavin Donnelly
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
