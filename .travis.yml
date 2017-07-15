@@ -1,6 +1,20 @@
 language: ruby
-cache: bundler
 rvm:
-  - 2.2
-install: bundle install
-script: rake deploy
+  - 2.3.3
+
+before_script:
+ - chmod +x ./script/cibuild
+
+script: ./script/cibuild
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
