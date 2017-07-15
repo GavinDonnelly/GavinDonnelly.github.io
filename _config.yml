@@ -1,9 +1,5 @@
 # Site Settings
-title: "gavindonnelly.github.io"
 name: "Gavin Donnelly"
-description: "Gavin Donnelly personal site" #need to think of something better
-url: https://gavindonnelly.github.io/
-repository: https://github.com/gavindonnelly/gavindonnelly.github.io
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 exclude: [vendor]
