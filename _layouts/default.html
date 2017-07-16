@@ -1,33 +1,21 @@
-<!DOCTYPE html>
-<html>
+{% include base_path %}
 
-<head>
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
 	<title>{{ page.title }}</title>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
-<body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/blog">Blog</a></li>
-		</ul>
-	</nav>
-	<main>
-		<div class="container">
+  <body>
+    {% include masthead.html %}
 
-			{{ content }}
+    {{ content }}
 
-		</div>
-	</main>
-	<footer>
-		<ul>
-			<li><a href="mailto:gavindonnelly0@gmail.com">email</a></li>
-			<li><a href="https://github.com/gavindonnelly">github.com/gavindonnelly</a></li>
-		</ul>
-	</footer>
-</body>
+    <div class="page__footer">
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
 
+  </body>
 </html>

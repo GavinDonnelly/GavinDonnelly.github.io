@@ -1,0 +1,33 @@
+{
+  "name": "GavinDonnelly.github.io",
+  "version": "0.0.1",
+  "description": "Personal website of Gavin Donnelly.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jhabdas/habd.as.git"
+  },
+  "keywords": [
+    "jekyll",
+    "blog",
+    "technology"
+  ],
+  "author": "Gavin Donnelly",
+  "license": "MIT",
+  "homepage": "https://github.com/GavinDonnelly/GavinDonnelly.github.io/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "node-sass": "^3.4.2",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "postcss-cli": "^2.5.1"
+  },
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o assets/css assets/_scss",
+    "autoprefixer": "postcss -u autoprefixer -b \">, 5%, ie 9\" -r assets/css/*",
+    "watch:css": "onchange \"assets/_scss/**/*.scss\" -- npm run build:css",
+    "build:css": "npm run scss && npm run autoprefixer"
+  }
+}
