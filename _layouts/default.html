@@ -2,20 +2,21 @@
 
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-	<title>{{ page.title }}</title>
+
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
-  <body>
-    {% include masthead.html %}
+<body>
+  {% include masthead.html %} {{ content }}
 
-    {{ content }}
+  <div class="page__footer">
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer.html %}
-      </footer>
-    </div>
+</body>
 
-  </body>
 </html>

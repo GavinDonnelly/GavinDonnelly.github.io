@@ -1,4 +1,6 @@
 # Site Settings
+locale: "en-UK"
+title: "Gavin Donnelly"
 name: "Gavin Donnelly"
 description: "Let's build a better Web"
 url: https://gavindonnelly.github.io/
@@ -18,6 +20,5 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 exclude: [vendor]
 
-assets:
-  sources:
-    - _assets/css
+sass:
+    sass_dir: ./_sass
