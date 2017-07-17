@@ -1,0 +1,7 @@
+# Masthead navigation links
+
+masthead:
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /blog/

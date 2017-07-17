@@ -1,0 +1,25 @@
+%tab-focus {
+  // Default
+  outline: thin dotted $warning-color;
+  // Webkit
+  outline: 5px auto $warning-color;
+  outline-offset: -2px;
+}
+
+/*
+   em function
+   ========================================================================== */
+
+@function em($target, $context: $doc-font-size) {
+  @return ($target / $context) * 1em;
+}
+
+@mixin clearfix {
+  clear: both;
+
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
