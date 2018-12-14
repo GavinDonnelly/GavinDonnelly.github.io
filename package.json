@@ -4,7 +4,7 @@
   "description": "Personal website of Gavin Donnelly.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jhabdas/habd.as.git"
+    "url": "git://github.com/GavinDonnelly/GavinDonnelly.github.io.git"
   },
   "keywords": [
     "jekyll",
@@ -13,7 +13,7 @@
   ],
   "author": "Gavin Donnelly",
   "license": "MIT",
-  "homepage": "https://github.com/GavinDonnelly/GavinDonnelly.github.io/",
+  "homepage": "https://github.com/GavinDonnelly/GavinDonnelly.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
