@@ -3,5 +3,7 @@
 masthead:
   - title: "About"
     url: /about/
+  - title: "CV"
+    url: /cv/
   - title: "Blog"
     url: /blog/

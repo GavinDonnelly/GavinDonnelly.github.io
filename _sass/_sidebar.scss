@@ -52,10 +52,6 @@
   }
 }
 
-/*
-   Author profile and links
-   ========================================================================== */
-
 .author__avatar {
   display: table-cell;
   vertical-align: top;
@@ -69,7 +65,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 110x;
     border-radius: 50%;
 
     @include breakpoint($large) {
